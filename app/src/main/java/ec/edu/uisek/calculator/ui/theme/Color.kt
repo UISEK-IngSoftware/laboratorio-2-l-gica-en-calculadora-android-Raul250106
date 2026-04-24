@@ -12,3 +12,9 @@ val Pink40 = Color(0xFF7D5260)
 
 val UiSekBlue = Color(0xFF03A9F4)
 val Red = Color(0xFF880030)
+
+val Orange = Color(0xFFFF8000)
+
+val White = Color(0xFFFFFFFF)
+
+val Gray = Color(0xFF757575)
