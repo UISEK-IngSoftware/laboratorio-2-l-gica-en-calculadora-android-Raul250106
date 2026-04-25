@@ -1,6 +1,7 @@
 package ec.edu.uisek.calculator
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.runtime.Composable
@@ -35,7 +36,7 @@ fun CalculatorScreen(viewModel: CalculatorViewModel = viewModel()) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Black)
+            .background(Color.White)
             .padding(16.dp),
         verticalArrangement = Arrangement.Center
     ) {
@@ -103,6 +104,7 @@ fun CalculatorButton(label: String, onClick: () -> Unit) {
             .aspectRatio(ratio = if (label == "AC") 2f else 1f)
             .fillMaxSize()
             .clip(CircleShape)
+            .border(2.dp, Gray, CircleShape)
             .background( color = when (label) {
                 in listOf("÷", "×", "−", "+", "=", ".") -> Orange
                 in listOf("AC", "C") -> Gray
